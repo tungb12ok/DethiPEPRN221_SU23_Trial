@@ -1,0 +1,78 @@
+﻿<Window x:Class="Q1.EmployeeWindown"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Q1"
+        mc:Ignorable="d"
+        Title="EmployeeWindown" Height="600" Width="800">
+    <Grid >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="179*"></RowDefinition>
+            <RowDefinition Height="113*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition  Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" >
+                <StackPanel Background="#FF9AEDF0">
+                    <Label Content="Employee Information" Foreground="Red" FontSize="20" FontStyle="Normal" />
+                    <Label Content="Employee Id"/>
+                    <TextBox x:Name="txtEmployeeId" />
+                    <Label Content="Employee Name"/>
+                    <TextBox x:Name="txtEmployeeName" />
+                    <Label Content="Gender"/>
+                    <StackPanel Orientation="Horizontal">
+                        <RadioButton Content="Male" Name="rbMale" Checked="rbMale_Checked"/>
+                        <RadioButton Content="Female" Name="rbFemale"/>
+                    </StackPanel>
+                    <Label Content="Date of birth"/>
+                    <DatePicker x:Name="txtDOB"/>
+                    <Label  Content="Phone"/>
+                    <TextBox x:Name="txtPhone" />
+                    <Label Content="ID Number"/>
+                    <TextBox x:Name="txtIdNumber" />
+                    <StackPanel Background="White">
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel Margin="20 10 20 10" Width="80" Height="20">
+                                <Button x:Name="btnRefresh" Click="btnRefresh_Click" >Refresh</Button>
+                            </StackPanel>
+                            <StackPanel Margin="20 10 20 10" Width="80" Height="20">
+                                <Button x:Name="btnAdd" Click="btnAdd_Click" >Add</Button>
+                            </StackPanel>
+                            <StackPanel Margin="20 10 20 10" Width="80" Height="20">
+                                <Button x:Name="btnEdit" Click="btnEdit_Click" >Edit</Button>
+                            </StackPanel>
+                            <StackPanel Margin="20 10 20 10" Width="80" Height="20">
+                                <Button x:Name="btnDelete" Click="btnDelete_Click" >Delete</Button>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <StackPanel Grid.Row="1">
+            <DataGrid Height="128" VerticalAlignment="Center" 
+                      x:Name="dgvEmployee" 
+                      AutoGenerateColumns="False" 
+                      BorderThickness="0" 
+                      BorderBrush="Transparent"
+                      GridLinesVisibility="None"
+                      SelectedCellsChanged="dgvEmployee_SelectedCellsChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Employee ID" Width="*" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Employee Name" Width="*" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Gender" Width="1*" Binding="{Binding Gender}"/>
+                    <DataGridTextColumn Header="DateOfBirth" Width="1*" Binding="{Binding Dob}"/>
+                    <DataGridTextColumn Header="Phone" Width="2*" Binding="{Binding Phone}"/>
+                    <DataGridTextColumn Header="ID Number" Width="2*" Binding="{Binding Idnumber}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
+    </Grid>
+</Window>

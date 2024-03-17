@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<ArrayOfService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Service>
+    <Id>1</Id>
+    <RoomTitle>401</RoomTitle>
+    <Month>1</Month>
+    <Year>2022</Year>
+    <FeeType>ManagementFee</FeeType>
+    <Amount>1596000.0000</Amount>
+    <PaymentDate xsi:nil="true" />
+    <Employee xsi:nil="true" />
+  </Service>
+  <Service>
+    <Id>2</Id>
+    <RoomTitle>402</RoomTitle>
+    <Month>1</Month>
+    <Year>2022</Year>
+    <FeeType>ManagementFee</FeeType>
+    <Amount>1656000.0000</Amount>
+    <PaymentDate xsi:nil="true" />
+    <Employee xsi:nil="true" />
+  </Service>
+  <Service>
+    <Id>3</Id>
+    <RoomTitle>403</RoomTitle>
+    <Month>1</Month>
+    <Year>2022</Year>
+    <FeeType>ManagementFee</FeeType>
+    <Amount>1848000.0000</Amount>
+    <PaymentDate>2022-01-08T00:00:00</PaymentDate>
+    <Employee>1</Employee>
+  </Service>
+  <Service>
+    <Id>4</Id>
+    <RoomTitle>404</RoomTitle>
+    <Month>1</Month>
+    <Year>2022</Year>
+    <FeeType>ManagementFee</FeeType>
+    <Amount>1968000.0000</Amount>
+    <PaymentDate>2022-01-11T00:00:00</PaymentDate>
+    <Employee>2</Employee>
+  </Service>
+  <Service>
+    <Id>5</Id>
+    <RoomTitle>405</RoomTitle>
+    <Month>1</Month>
+    <Year>2022</Year>
+    <FeeType>ManagementFee</FeeType>
+    <Amount>2160000.0000</Amount>
+    <PaymentDate>2022-01-20T00:00:00</PaymentDate>
+    <Employee>4</Employee>
+  </Service>
+  <Service>
+    <Id>6</Id>
+    <RoomTitle>501</RoomTitle>
+    <Month>1</Month>
+    <Year>2022</Year>
+    <FeeType>ManagementFee</FeeType>
+    <Amount>1596000.0000</Amount>
+    <PaymentDate xsi:nil="true" />
+    <Employee xsi:nil="true" />
+  </Service>
+  <Service>
+    <Id>7</Id>
+    <RoomTitle>502</RoomTitle>
+    <Month>1</Month>
+    <Year>2022</Year>
+    <FeeType>ManagementFee</FeeType>
+    <Amount>1656000.0000</Amount>
+    <PaymentDate xsi:nil="true" />
+    <Employee xsi:nil="true" />
+  </Service>
+  <Service>
+    <Id>8</Id>
+    <RoomTitle>503</RoomTitle>
+    <Month>1</Month>
+    <Year>2022</Year>
+    <FeeType>ManagementFee</FeeType>
+    <Amount>1848000.0000</Amount>
+    <PaymentDate>2022-01-08T00:00:00</PaymentDate>
+    <Employee>1</Employee>
+  </Service>
+  <Service>
+    <Id>9</Id>
+    <RoomTitle>504</RoomTitle>
+    <Month>1</Month>
+    <Year>2022</Year>
+    <FeeType>ManagementFee</FeeType>
+    <Amount>1968000.0000</Amount>
+    <PaymentDate>2022-01-11T00:00:00</PaymentDate>
+    <Employee>2</Employee>
+  </Service>
+</ArrayOfService>
