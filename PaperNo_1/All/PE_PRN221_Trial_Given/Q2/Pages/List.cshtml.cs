@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Q2.Models;
-using Q2.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -75,19 +74,18 @@ namespace Q2.Pages
                         {
                             Service s = new Service()
                             {
-                                Amount = item.Amount,
-                                FeeType = item.FeeType,
-                                Id = item.Id,
                                 RoomTitle = item.RoomTitle,
                                 Month = (byte)item.Month,
                                 Year = item.Year,
-                                PaymentDate = DateTime.Parse(item.PaymentDate),
-                                Employee = int.Parse(item.Employee)
+                                FeeType = item.FeeType,
+                                Amount = item.Amount,
+                                PaymentDate = !string.IsNullOrEmpty(item.PaymentDate) ? DateTime.Parse(item.PaymentDate) : (DateTime?)null,
+                                Employee = !string.IsNullOrEmpty(item.Employee) ? int.Parse(item.Employee) : (int?)null
 
                             };
-                            _context.Add(item);
-                            _context.SaveChanges();
+                            _context.Services.Add(s);
                         }
+                        _context.SaveChanges();
                     }
 
                 }
